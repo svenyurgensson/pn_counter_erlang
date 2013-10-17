@@ -1,0 +1,13 @@
+{application, pn_counter,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  cowboy
+                 ]},
+  {mod, { pn_counter_app, []}},
+  {env, [{http_port, 8000}]}
+ ]}.
